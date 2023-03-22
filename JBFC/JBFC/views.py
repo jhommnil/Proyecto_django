@@ -6,4 +6,4 @@ from django.shortcuts import render
 # Response: Cuando enviamos datos de la vista a la plantilla
 
 def formulario(request):
-    return render(request,"formulario_registro")
+    return render(request,"index.html")

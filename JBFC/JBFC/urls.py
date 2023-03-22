@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from JBFC.views import formulario_registro
+from JBFC.views import formulario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('formulario_registro',formulario_registro)
+    path('formulario',formulario),
 ]

@@ -1,26 +1,25 @@
-{% load static%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>login</title>
-</head>
-<body>  
-    <!--Login-->
-    <section class="form-register">
-        <!--Titulo del Formulario-->
-        <h4>login</h4>
-        <!--Clases controles-->
-        <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su correo">
-        <input class="controls" type="text" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"> 
-        <!--Boton login-->
-        <input class="botons" type="submit" value="Ingresar">
-        <p><a href="index.html">No tengo una Cuenta</a></p>
-    </section>
+    {% load static%}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <title>login</title>
+    </head>
+    <body>
+        <!--Login-->
+        <section class="form-register">
+            <!--Titulo del Formulario-->
+            <h4>login</h4>
+            <!--Clases controles-->
+            <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su correo">
+            <input class="controls" type="text" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+            <!--Boton login-->
+            <input class="botons" type="submit" value="Ingresar">
+            <p><a href="/formulario">No tengo una Cuenta</a></p>
+        </section>
 
-    
-</body>
-</html>
+
+    </body>
+    </html>

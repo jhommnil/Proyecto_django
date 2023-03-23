@@ -7,3 +7,6 @@ from django.shortcuts import render
 
 def formulario(request):
     return render(request,"index.html")
+
+def login(request):
+    return render(request, "login.html")

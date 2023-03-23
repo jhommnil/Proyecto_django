@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("{% static 'img/index.jpg'%}");
+    background-image: url(../img/indesx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
 }
 .form-register{
     width: 400px;

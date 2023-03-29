@@ -1,0 +1,21 @@
+// Crear una app
+python ./manage.py starctapp {[app]}
+
+bd: db.sqlite3
+usuario: vlaslov
+contraseña: khipu2023
+
+// Revisar las APPs
+python ./manage.py check {[app]}
+
+// Ejecutar la migracion inicial
+python ./manage.py makemigrations
+
+// Ejecutar la migracion SQL
+python ./manage.py sqlmigrate {[app]} {[NroMigracion]}
+
+// Generar la BD
+python ./manage.py migrate
+
+//crear super usuario
+python .\manage.py createsuperuser

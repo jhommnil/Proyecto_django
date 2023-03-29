@@ -1,0 +1,27 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Actualizar</title>
+
+</head>
+<body>  
+    <form method="post">
+        {% csrf_token %}
+        <!--Registrar usuario-->
+        <section class="form-register">
+            <!--Titulo del Formulario-->
+            <h4>Actualizar</h4>
+            <!--Clases controles-->
+            <input class="controls" type="text" name="codigo" id="codigo" placeholder="Ingrese codigo">
+            <input class="controls" type="text" name="nombre_prueba" id="nombre_prueba" placeholder="Ingrese nombre de la prueba"> 
+            <input class="botons" type="submit" value="Registrar">
+        </section>
+    </form>
+    {% if titulo %}
+        libro: {{ titulo }}, guardado correctamente.
+    {% endif %}
+</body>

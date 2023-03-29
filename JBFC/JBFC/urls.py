@@ -17,10 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from JBFC.views import formulario
 from JBFC.views import login
+from prueba_tablas.views import CrearRegistroPrueba
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('formulario/', formulario),
     path('login/', login),
+    path('Registro/', CrearRegistroPrueba)
+
 ]
